@@ -1,0 +1,33 @@
+practice_1
+
+https://corporatefinanceinstitute.com/resources/excel/study/basic-excel-formulas-beginners/
+
+=SUM(B2:G2) – A simple selection that sums the values of a row.
+=SUM(A2:A8) – A simple selection that sums the values of a column.
+=SUM(A2:A7, A9, A12:A15) – A sophisticated collection that sums values from range A2 to A7, skips A8, adds A9, jumps A10 and A11, then finally adds from A12 to A15.
+=SUM(A2:A8)/20 – Shows you can also turn your function into a formula.
+=AVERAGE(B2:B11) – Shows a simple average, also similar to (SUM(B2:B11)/10)
+=COUNT(A1:C1) – Now it can count rows.
+
+COUNTA:
+Like the COUNT function, COUNTA counts all cells in a given rage. However, it counts all cells regardless of type. That is, unlike COUNT that only counts numerics, it also counts dates, times, strings, logical values, errors, empty string, or text.
+=COUNTA(L4:L8)
+
+=IF(H5>I5,"TRUE","FALSE")
+=IF(E4<2000,E4*5%,IF(E4<=5000,E4*10%,"FALSE"))
+=IF(SUM(D4:F4)>SUM(H4:J4),SUM(G4:G7),SUM(K4:K8))
+TRIM(A2) – Removes empty spaces in the value in cell A2.
+=MIN(H4:H7)
+=MAX(H4:H7)
+
+
+
+
+
+
+
+
+
+
+
+
