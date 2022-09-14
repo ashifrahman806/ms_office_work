@@ -19,7 +19,11 @@ Like the COUNT function, COUNTA counts all cells in a given rage. However, it co
 TRIM(A2) – Removes empty spaces in the value in cell A2.
 =MIN(H4:H7)
 =MAX(H4:H7)
-
+Try using the Shift+F11 keys and you will see a new blank sheet similar to the above sheet is opened.
+=IF(EXACT(N12,O12),"OK","NOT OK")   for matching text value
+greater than or less than
+=IF(AND(O16>=2000,O16<=5000),O16*5%,O16*10%)
+=IF(AND(N15>=N17,N15<=N18),M18,M19)
 
 
 
