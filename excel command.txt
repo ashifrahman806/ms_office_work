@@ -32,10 +32,27 @@ greater than or equal to 15000, 60% of the basic if the basic is less than 15000
 =IF(E4>=20000,E4*50%,IF(E4>=15000,E4*55%,E4*60%))
 =IF(AND(E4>=20000),E4*50%,IF(AND(E4>=15000),E4*55%,E4*60%))
 
+>> Calculate - Electricity Charge=
+If units consumed is less than or equal to 100. Rate per unit multiply by 10 tk.
+If units consumed between101 to 200. Rate per unit multiply by 12 tk.
+If units consumed above 200. Rate per unit multiply by 15 tk.
 
+=IF(F5<=100,E5*10,IF(AND(F5>=101,F5<=200),E5*12,E5*15))
+=IF(F5<=100,E5*10,IF(F5>=101,IF(F5<=200,E5*12,E5*15)))
 
+>> 10. Calculate- Sub charge=
+If electricity charge greater than 4000. Electricity charges of 10 percent.
+If electricity charge greater than or equal 3000 to 4000. Electricity charges of 8 percent.
+If electricity charge greater than 2000. Electricity charges of 5 percent.
+If electricity charge greater than 1000. Electricity charges of 3 percent.
+Other ways 0 percent
 
+=IF(G5>4000,G5*10%,IF(AND(G5>=3000,G5<=4000),G5*8%,IF(G5>2000,G5*5%,IF(G5>1000,G5*3%,G5*0%))))
 
+here and operation is transformed to if  like : IF(G5>=3000,IF(G5<=4000,G5*8%),.....
+=IF(G5>4000,G5*10%,IF(G5>=3000,IF(G5<=4000,G5*8%),IF(G5>2000,G5*5%,IF(G5>1000,G5*3%,G5*0%)))) 
+
+=RANK(I5,$I$5:$I$14)
 
 
 
