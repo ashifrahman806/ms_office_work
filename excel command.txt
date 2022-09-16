@@ -25,8 +25,12 @@ greater than or less than
 =IF(AND(O16>=2000,O16<=5000),O16*5%,O16*10%)
 =IF(AND(N15>=N17,N15<=N18),M18,M19)
 
+model test 3
 
-
+>> House Rent – 50% of the basic if the basic is greater than or equal to 20000, 55% of the basic if the basic is
+greater than or equal to 15000, 60% of the basic if the basic is less than 15000.
+=IF(E4>=20000,E4*50%,IF(E4>=15000,E4*55%,E4*60%))
+=IF(AND(E4>=20000),E4*50%,IF(AND(E4>=15000),E4*55%,E4*60%))
 
 
 
